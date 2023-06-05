@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="ThemeOverlay.MyApplication.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">#FF98579A</item>
+        <item name="fullscreenTextColor">#DBC4DA</item>
+    </style>
+</resources>

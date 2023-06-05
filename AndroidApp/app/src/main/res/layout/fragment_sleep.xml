@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF98579A"
+    tools:context=".ui.home.SleepFragment">
+
+    <Button
+        android:id="@+id/bDateSleep"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:button="?android:selectableItemBackground"
+        android:onClick="datePickOnClick"
+        android:textColor="#DCC5DB"
+        android:translationY="75dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sleep_time_label"
+        android:textColor="#DCC5DB"
+        android:textSize="20sp"
+        android:translationX="20dp"
+        android:translationY="350dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fast_sleep_time_label"
+        android:textColor="#DCC5DB"
+        android:textSize="20sp"
+        android:translationX="20dp"
+        android:translationY="250dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/slow_sleep_time_label"
+        android:textColor="#DCC5DB"
+        android:textSize="20sp"
+        android:translationX="20dp"
+        android:translationY="300dp" />
+
+    <TextView
+        android:id="@+id/slow_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_init_value"
+        android:textColor="#DCC5DB"
+        android:textSize="20sp"
+        android:translationX="300dp"
+        android:translationY="300dp" />
+
+    <TextView
+        android:id="@+id/fast_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_init_value"
+        android:textColor="#DCC5DB"
+        android:textSize="20sp"
+        android:translationX="300dp"
+        android:translationY="250dp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time_init_value"
+        android:textColor="#DCC5DB"
+        android:textSize="20sp"
+        android:translationX="300dp"
+        android:translationY="350dp" />
+
+    <com.github.mikephil.charting.charts.HorizontalBarChart
+        android:id="@+id/sleepBarChart"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:translationY="125dp" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="#4E1050"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <RadioButton
+            android:id="@+id/rbDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="?android:selectableItemBackground"
+            android:checked="true"
+            android:onClick="radioButtonClick"
+            android:text="@string/day"
+            android:textColor="#DCC5DB"
+            android:translationX="25dp" />
+
+        <RadioButton
+            android:id="@+id/rbMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="?android:selectableItemBackground"
+            android:onClick="radioButtonClick"
+            android:text="@string/month"
+            android:textColor="#DCC5DB"
+            android:translationX="100dp" />
+
+        <RadioButton
+            android:id="@+id/rbYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="?android:selectableItemBackground"
+            android:onClick="radioButtonClick"
+            android:text="@string/year"
+            android:textColor="#DCC5DB"
+            android:translationX="175dp" />
+    </RadioGroup>
+
+</FrameLayout>

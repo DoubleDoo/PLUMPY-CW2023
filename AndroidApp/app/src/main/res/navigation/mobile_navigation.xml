@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.kkozhakin.ryvok1.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_activity"
+        android:name="com.kkozhakin.ryvok1.ui.home.ActivityFragment"
+        android:label="@string/menu_activity"
+        tools:layout="@layout/fragment_activity" />
+
+    <fragment
+        android:id="@+id/nav_sleep"
+        android:name="com.kkozhakin.ryvok1.ui.home.SleepFragment"
+        android:label="@string/menu_sleep"
+        tools:layout="@layout/fragment_sleep" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.kkozhakin.ryvok1.ui.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_about_device"
+        android:name="com.kkozhakin.ryvok1.ui.AboutDeviceFragment"
+        android:label="@string/menu_about_device"
+        tools:layout="@layout/fragment_about_device" />
+</navigation>
